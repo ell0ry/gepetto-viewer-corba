@@ -25,7 +25,7 @@ class ViewerServerProcess;
 class OmniOrbServerPlugin : public QObject,
                             public gepetto::gui::PluginInterface {
   Q_OBJECT
-  Q_INTERFACES(gepetto::gui::PluginInterface)
+  Q_INTERFACES(gepetto::gui::PluginInterface, "org.gepetto.gui.PluginInterface/1.0")
 #if (QT_VERSION >= QT_VERSION_CHECK(5, 0, 0))
   Q_PLUGIN_METADATA(IID "gepetto-viewer-corba.omniorbserver")
 #endif
