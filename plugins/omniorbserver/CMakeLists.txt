@@ -17,7 +17,7 @@ if(PROJECT_USE_QT4)
 else()
   set(QT4 "")
 endif()
-
+include_directories(/usr/local/include)
 gepetto_gui_plugin(
   omniorbserver
   INSIDE_GEPETTO_VIEWER_CORBA
